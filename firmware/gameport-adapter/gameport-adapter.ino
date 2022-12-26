@@ -27,6 +27,8 @@
 
 static Joystick *createJoystick() {
 
+  return new Sidewinder;
+  /*
   const auto sw1 = DigitalInput<14, true>{}.isLow();
   const auto sw2 = DigitalInput<15, true>{}.isLow();
   const auto sw3 = DigitalInput<20, true>{}.isLow();
@@ -55,6 +57,7 @@ static Joystick *createJoystick() {
     default:
       return new GenericJoystick<2,2>;
   }
+  */
 }
 
 void setup() {
